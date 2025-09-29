@@ -36,19 +36,19 @@ This project is built using:
 •	ReDoc: http://127.0.0.1:8000/redoc
 
 ⚒️  Project Structure
-├── main.py                 # FastAPI entry point
-├── containers.py           # Dependency Injection container
-├── auth.py                 # Authentication service
-├── services.py             # Book services
-├── serializers.py          # Serializer & parser
-├── model.py                # Pydantic models
-├── sql_models.py           # ORM Models
-├── utils.py                # database connector
-├── utils.py                # authentication utils
-├── book.db                 # sqlite database
-├── book_archieve.db        # archieve sql database for testing purposes
-├── requirements.txt
-└── README.md
+- main.py                 # FastAPI entry point
+- containers.py           # Dependency Injection container
+- auth.py                 # Authentication service
+- services.py             # Book services
+- serializers.py          # Serializer & parser
+- model.py                # Pydantic models
+- sql_models.py           # ORM Models
+- databases.py                # database connector
+- utils.py                # authentication utils
+- book.db                 # sqlite database
+- book_archieve.db        # archieve sql database for testing purposes
+- requirements.txt
+- README.md
 
 📌 Notes
 	•	Book data is stored in books.db so delete this file will remove all data

@@ -8,13 +8,11 @@ async def get_token_from_header_or_cookie(request: Request):
     Ambil token dari Authorization header kalau ada,
     kalau tidak ada, fallback ke HttpOnly cookie.
     """
-    # cek Authorization header
     auth = request.headers.get("Authorization")
     scheme, param = get_authorization_scheme_param(auth)
     if scheme.lower() == "bearer":
         return param
 
-    # fallback ke cookie
     token = request.cookies.get("access_token")
     return token
 
